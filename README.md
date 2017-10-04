@@ -4,9 +4,9 @@ Ejercicios de la asignatura Programación de **1º de DAM (Desarrollo de Aplicac
 
 ## ¿Qué se aprende en programación?
 
-* Comandos de Linux
-* Git y GitHub
-* Lenguaje Java: variables, bucles, POO, etc.
+* Comandos de Linux :penguin:
+* Git y GitHub :octocat:
+* Lenguaje Java :coffee: : variables, bucles, POO, etc.
 
 ## Bibliografía
 
