@@ -25,6 +25,7 @@ Para compilar el programa teclea:
 
 ```console
 javac HolaMundo.java
+```
 
 Para ejecutar el programa usamos el comando `java`:
 
