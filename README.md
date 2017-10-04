@@ -6,11 +6,11 @@ Ejercicios de la asignatura Programación de **1º de DAM (Desarrollo de Aplicac
 
 * Comandos de Linux
 * Git y GitHub
-* Lenguaje Java: variables, bucles, P00, etc.
+* Lenguaje Java: variables, bucles, POO, etc.
 
 ## Bibliografía
 
-![Aprende Java con Ejercicios] (imagenes/aprendejava.jpg  width=200)
+![Aprende Java con Ejercicios](imagenes/aprendejava.jpg)
 
  
 
