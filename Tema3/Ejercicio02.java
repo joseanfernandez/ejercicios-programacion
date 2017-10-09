@@ -11,11 +11,11 @@ public class Ejercicio02 { // Clase principal
   
   System.out.print("Euros: ");
   euros = System.console().readLine();
-  int eurosnum;
-  eurosnum = Integer.parseInt( euros ) ;
+  int eurosNum;
+  eurosNum = Integer.parseInt( euros ) ;
   
   double pesetas;
-  pesetas = eurosnum * 166.386;
+  pesetas = eurosNum * 166.386;
   
   System.out.print(pesetas); 
   System.out.print(" pesetas");
