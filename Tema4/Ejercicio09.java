@@ -20,7 +20,6 @@ public class Ejercicio09 { // Clase principal
  
   double mat1 = b*b;
   double mat2 = (4*a*c);
-  double mat3 = mat1 - mat2;
   
   if (a == 0) {
       double x = -c / b;
