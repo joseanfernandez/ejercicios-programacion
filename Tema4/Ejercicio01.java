@@ -26,27 +26,27 @@ public class Ejercicio01 { // Clase principal
     switch (diaSemana) {
       
       case 1:
-      System.out.print("Los lunes tienes programación");
-      break;
+        System.out.print("Los lunes tienes programación");
+        break;
       
       case 2:
-      System.out.print("Los martes tienes sistemas informáticos");
-      break;
+        System.out.print("Los martes tienes sistemas informáticos");
+        break;
       
       case 3:
-      System.out.print("Los miércoles tienes programación");
-      break;
+        System.out.print("Los miércoles tienes programación");
+        break;
       
       case 4:
-      System.out.print("Los jueves tienes entornos de desarrollo");
-      break;
+        System.out.print("Los jueves tienes entornos de desarrollo");
+        break;
       
       case 5:
-      System.out.print("Los viernes tienes sistemas informáticos");
-      break;
+        System.out.print("Los viernes tienes sistemas informáticos");
+        break;
       
-      default:
-      System.out.print("Las clases son de lunes a viernes");
+        default:
+        System.out.print("Las clases son de lunes a viernes");
       }
       
   

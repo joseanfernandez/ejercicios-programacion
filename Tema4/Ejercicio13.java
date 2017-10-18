@@ -19,22 +19,22 @@ public class Ejercicio13 { // Clase principal
   int num3 = s.nextInt();
   
   if ((num1 > num2) && (num2 > num3))  {
-    System.out.print("De mayor a menor: " + num1 + "-" + num2 + "-" + num3);
+    System.out.print("De mayor a menor: " + num1 + " " + num2 + " " + num3);
   }
   if ((num1 > num3) && (num3 > num2))  {
-    System.out.print("De mayor a menor: " + num1 + "-" + num3 + "-" + num2);
+    System.out.print("De mayor a menor: " + num1 + " " + num3 + " " + num2);
   }
   if ((num2 > num1) && (num1 > num3))  {
-    System.out.print("De mayor a menor: " + num2 + "-" + num1 + "-" + num3);
+    System.out.print("De mayor a menor: " + num2 + " " + num1 + " " + num3);
   }
   if ((num2 > num3) && (num3 > num1))  {
-    System.out.print("De mayor a menor: " + num2 + "-" + num3 + "-" + num1);
+    System.out.print("De mayor a menor: " + num2 + " " + num3 + " " + num1);
   }
   if ((num3 > num2) && (num2 > num1))  {
-    System.out.print("De mayor a menor: " + num3 + "-" + num2 + "-" + num1);
+    System.out.print("De mayor a menor: " + num3 + " " + num2 + " " + num1);
   }
   if ((num3 > num1) && (num1 > num2))  {
-    System.out.print("De mayor a menor: " + num3 + "-" + num1 + "-" + num2);
+    System.out.print("De mayor a menor: " + num3 + " " + num1 + " " + num2);
   }
   }
  }

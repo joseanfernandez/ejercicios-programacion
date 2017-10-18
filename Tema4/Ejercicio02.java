@@ -16,16 +16,16 @@ public class Ejercicio02 { // Clase principal
     int hora = s.nextInt();
     
     if (hora >= 6 && hora <=12) {
-    System.out.print("Buenos días");
+      System.out.print("Buenos días");
     }
     if (hora >= 13 && hora <=20) {
-    System.out.print("Buenas tardes");
+      System.out.print("Buenas tardes");
     }
     if (hora >= 21 && hora <=23) {
-    System.out.print("Buenas noches");
+      System.out.print("Buenas noches");
     }
     if (hora >= 00 && hora <=5) {
-    System.out.print("Buenas noches");
+      System.out.print("Buenas noches");
     }
    } 
   }    
