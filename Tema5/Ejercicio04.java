@@ -5,8 +5,6 @@
 *utilizando un bucle for .
 */
 
-import java.util.Scanner;
-
 public class Ejercicio04 { // Clase principal
   public static void main(String[] args) {
     
