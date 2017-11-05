@@ -30,13 +30,11 @@ public class Ejercicio43 { // Clase principal
       numero /= 10;
     }
     
-  System.out.println(volteado);
     while (aux < pos) {
       num1 = (num1 * 10) + (volteado % 10);
       volteado /=10;
       aux++;
     }
-    
     
     while (volteado > 0) {
       num2 = (num2 * 10) + (volteado % 10);
