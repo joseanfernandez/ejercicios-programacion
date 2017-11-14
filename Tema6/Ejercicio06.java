@@ -18,7 +18,6 @@ public class Ejercicio06 { // Clase principal
     int numero = 0;
     int numsecreto = (int) (Math.random() * 101);
     int intentos = 5;
-    System.out.println(numsecreto);
     
     do {
       numero = s.nextInt();
