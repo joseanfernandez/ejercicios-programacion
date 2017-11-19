@@ -19,22 +19,22 @@ public class Ejercicio10 { // Clase principal
       c = (int)(Math.random() * 6);
       switch (c) {
           case 0:
-            caracter = ("*");
+            caracter = "*";
             break;
           case 1:
-            caracter = ("-");
+            caracter = "-";
             break;
           case 2:
-            caracter = ("=");
+            caracter = "=";
             break;
           case 3:
-            caracter = (".");
+            caracter = ".";
             break;
           case 4:
-            caracter = ("|");
+            caracter = "|";
             break;
           case 5:
-            caracter = ("@");
+            caracter = "@";
             break;
           default:
         }
