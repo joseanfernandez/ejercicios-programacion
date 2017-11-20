@@ -10,30 +10,32 @@ public class Ejercicio08 { // Clase principal
   public static void main(String[] args) {
     
     for (int i = 0; i < 14; i++) {
-      int resultado = (int) (Math.random() * 6);
-      System.out.println("┌─┬─┬─┐");
-      switch (resultado) {
-        case 0:
-          System.out.println("│ │X│ │");
-          break;
-        case 1:
-          System.out.println("│ │X│ │");
-          break;
-        case 2:
-          System.out.println("│1│ │ │");
-          break;
-        case 3:
-          System.out.println("│1│ │ │");
-          break;
-        case 4:
-          System.out.println("│1│ │ │");
-          break;
-        case 5:
-          System.out.println("│ │ │2│");
-          break;
-        default:
+      System.out.println("┌─┬─┬─┐ ┌─┬─┬─┐ ┌─┬─┬─┐");
+      for (int columna = 1; columna <= 3; columna++) {
+        int resultado = (int) (Math.random() * 6);
+        switch (resultado) {
+          case 0:
+            System.out.print("│ │X│ │ ");
+            break;
+          case 1:
+            System.out.print("│ │X│ │ ");
+            break;
+          case 2:
+            System.out.print("│1│ │ │ ");
+            break;
+          case 3:
+            System.out.print("│1│ │ │ ");
+            break;
+          case 4:
+            System.out.print("│1│ │ │ ");
+            break;
+          case 5:
+            System.out.print("│ │ │2│ ");
+            break;
+          default:
+        }
       }
-      System.out.println("└─┴─┴─┘");
+      System.out.println("\n└─┴─┴─┘ └─┴─┴─┘ └─┴─┴─┘");
     }
       
        int pleno = (int) (Math.random() * 6);
