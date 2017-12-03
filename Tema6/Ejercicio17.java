@@ -1,54 +1,49 @@
  /**
-*Tema 6
-*Ejercicio 17
-*Realiza un programa que pinte por pantalla una pecera con un pececito dentro. 
-*Se debe pedir al usuario el ancho y el alto de la pecera, que como mínimo serán de 4 unidades. 
-*No hay que comprobar que los datos se introducen correctamente; podemos suponer que el usuario los introduce bien.
-*Dentro de la pecera hay que colocar de forma aleatoria un pececito, 
-*que puede estar situado en cualquiera de las posiciones que quedan en el hueco que forma el rectángulo.
+* Tema 6
+* Ejercicio 17
+* Realiza un programa que pinte por pantalla una pecera con un pececito dentro. 
+* Se debe pedir al usuario el ancho y el alto de la pecera, que como mínimo serán de 4 unidades. 
+* No hay que comprobar que los datos se introducen correctamente; podemos suponer que el usuario los
+* introduce bien. Dentro de la pecera hay que colocar de forma aleatoria un pececito, que puede 
+* estar situado en cualquiera de las posiciones que quedan en el hueco que forma el rectángulo.
 */
 
 import java.util.Scanner;
 
 
-public class Ejercicio17 { // Clase principal
+public class pececito { // Clase principal
   public static void main(String[] args) {
   
     Scanner s = new Scanner(System.in);
-    System.out.print("Introduce la altura de la pecera: ");
-    int h = s.nextInt();
-    System.out.print("Introduce la anchura de la pecera: ");
+    System.out.print("Introduce la anchura de la pecera (mínimo 4): ");
     int w = s.nextInt();
-    int espacios = w - 2;
-    int hint = h-2;
-    int wint = w-2;
-    int pececito = (int) (Math.random() * (h - 2) * (w - 2)); 
-    int posicion = 0;
+    System.out.print("Introduce la altura de la pecera (mínimo 4): ");
+    int h = s.nextInt();
+    int pez = (int)(Math.random() *  ((w - 2) * (h - 2))) + 1 ;
+    int posicion = 1;
+    int anchoEspaciado = 2 * (w-2) + 1;
     
+    for (int i = 0; i < w; i++) {
+      System.out.print("* ");
+    }
+    System.out.println();
     
-    
-      for (int i=1; i<=w; i++) {
-        System.out.print("*");
-      }
-      System.out.println();
-      
-      while (hint > 0) {
-        System.out.print("*");
-        for (int i=1; i<=wint; i++) {
-          if (posicion == pececito) {
+    for (int i = 0; i < h-2; i++) {
+      System.out.print("*");
+      for (int j = 0; j < anchoEspaciado; j++) {
+        if ( posicion == pez) {
           System.out.print("&");
         } else {
           System.out.print(" ");
         }
         posicion++;
-        }
-        System.out.println("*");
-        hint--;
       }
-      
-      for (int i=1; i<=w; i++) {
-        System.out.print("*");
-      }
+      System.out.println("*");
+    }
     
-  } 
+    
+    for (int i = 0; i < w; i++) {
+      System.out.print("* ");
+    }
+  }
 }
