@@ -9,8 +9,7 @@
  import java.util.Scanner;
  
  public class Ejercicio05B { // Clase principal
-  public static void main(String[] args)
-  throws InterruptedException {
+  public static void main(String[] args) {
     
     Scanner s = new Scanner(System.in);
     int [] [] num = new int [6][10];
