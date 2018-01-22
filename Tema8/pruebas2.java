@@ -32,7 +32,9 @@ public class pruebas2 { // Clase principal
     //ejercicios20al28.Arrays.volteaArrayInt(n);
     System.out.println();
     ejercicios20al28.Arrays.rotaDerechaArrayInt(n,2);
-
+    System.out.println();
+    ejercicios20al28.Arrays.rotaIzquierdaArrayInt(n,2);
+    
     
    
   } 

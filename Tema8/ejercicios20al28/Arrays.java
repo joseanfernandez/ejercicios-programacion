@@ -154,11 +154,11 @@ public class Arrays {
       
       for (int i = 0; i < array.length; i++) {
         
-        array[i] = arrayAux[j];
+        arrayAux[i] = array[j];
         j--;
       }
       
-      muestraArray(array);
+      muestraArray(arrayAux);
     }
     
     
@@ -169,26 +169,74 @@ public class Arrays {
      */
     public static void rotaDerechaArrayInt(int array [], int n) {
       
-      
       int[] arrayAux = new int [array.length];
-      for (int l = 0; l < n; l++) {
+      
       for (int i = 0; i < array.length; i++) {
         
         arrayAux[i] = array[i];
         
       }
       
+      int aux;
+     
       
-        arrayAux[0] = array[array.length - 1];
-         int k = 0;
-        for (int j = 1; j < array.length; j++) {
-         
-          arrayAux[j] = array[k];
-          k++;
+      while (n > 0) {
+        
+        aux = arrayAux[arrayAux.length - 1];
+        
+        for (int i = arrayAux.length - 1; i > 0; i--) {
+          arrayAux[i] = arrayAux[i - 1];
         }
+        
+      arrayAux[0] = aux;
+      n--;
       }
+      
       muestraArray(arrayAux);
-       
     }
+    
+    
+    
+    /**
+     * Rota n posiciones a la izquierda los números de un array.
+     * @param array[], n
+     * @return array[] rotado las posiciones indicadas.
+     */
+    public static void rotaIzquierdaArrayInt(int array [], int n) {
+      
+      int[] arrayAux = new int [array.length];
+      
+      for (int i = 0; i < array.length; i++) {
+        
+        arrayAux[i] = array[i];
+        
+      }
+      
+      int aux;
+      
+      while (n > 0) {
+       
+        aux = arrayAux[0];
+       
+        for (int i = 0; i < arrayAux.length - 1; i++) {
+         
+          arrayAux[i] = arrayAux[i + 1];
+         
+        }
+        
+        arrayAux[arrayAux.length - 1] = aux;
+        
+        n--;
+       
+      }
+      
+      muestraArray(arrayAux);
+    }
+      
+     
+      
+      
+      
+   
       
   }
