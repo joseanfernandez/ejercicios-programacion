@@ -20,6 +20,7 @@
     int columna = 0;
     int max = Integer.MIN_VALUE;
     int min = Integer.MAX_VALUE;
+    double sumatorio = 0;
     
     for (int j = 0; j < 10; j++) {
       for (int i = 0; i < 10; i++) {
@@ -44,17 +45,9 @@
       if (diagonal[i] < min) {
         min = diagonal [i];
       }
+      sumatorio+=diagonal[i];
       
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
@@ -81,14 +74,15 @@
     System.out.println();
     
      
-      System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-      System.out.print("│Diagonal");
-      for (int i = 0; i < diagonal.length; i++) {  
-        System.out.printf("│%4d ", diagonal[i]);
-      }
-      System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
-      
-      System.out.print("El máximo de la diagonal es " + max + " y el mínimo es " + min);
+    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
+    System.out.print("│Diagonal");
+    for (int i = 0; i < diagonal.length; i++) {  
+      System.out.printf("│%4d ", diagonal[i]);
+    }
+    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
+    
+    System.out.println("El máximo de la diagonal es " + max + " y el mínimo es " + min);
+    System.out.printf("%-10s %4.2f", "La media de los números de la diagonal es ", sumatorio/10);  
 
   }
 }
