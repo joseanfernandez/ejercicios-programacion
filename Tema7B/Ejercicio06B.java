@@ -4,9 +4,9 @@
  * Modifica el programa anterior de tal forma que no se repita ningún número en el array.
  */
 
- import java.util.Scanner;
- 
- public class Ejercicio06B { // Clase principal
+  import java.util.Scanner;
+  
+  public class Ejercicio06B { // Clase principal
   public static void main(String[] args) {
     
     Scanner s = new Scanner(System.in);
@@ -20,28 +20,29 @@
     int cMax = 0;
     int fMin = 0;
     int cMin = 0;
-    
-    
+     boolean rep;
     // Introduce los 20 valores
     
     for (int j = 0; j < 6; j++) {
       for (int i = 0; i < 10; i++) {
-        boolean rep = false;
-          do {
-             num [j] [i] = (int)(Math.random() * 60);
-             
-            for (int k = 0; k < 10 * j + i; k++) {
-              
+        
+        do {
           
-                  if (num [j] [i] == num[k / 10] [k % 10] ) {
-                    rep = true;
-                  } 
+          num [j] [i] = (int)(Math.random() * 1000);
+          rep = false;
+          
+           for (int k = 0; k < 6; k++) {
+            for (int l = 0; l < 10; l++) {
+              
+              if (num [j] [i] == num [k] [l]) {
+                
+                rep = true;
+              }
             }
-              
-          } while (rep = false);
-     
-          
-            
+          }
+        
+        
+        } while (rep);
         if (num [j] [i] > max) {
           max = num [j] [i];
           fMax = j;
@@ -53,6 +54,7 @@
         }
       }
     }
+  
       
      
     System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
