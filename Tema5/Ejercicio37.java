@@ -29,9 +29,11 @@ public class Ejercicio37 { // Clase principal
       for (int i = 1; i <= digito; i++) {
         System.out.print("|");
       }
-      System.out.print("-");
+      volteado /= 10; 
       
-      volteado /= 10;  
+      if (volteado > 0) {
+        System.out.print("-"); 
+      }
     }  
   } 
 }

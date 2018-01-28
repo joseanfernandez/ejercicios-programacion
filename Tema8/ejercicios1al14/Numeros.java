@@ -72,7 +72,7 @@ public class Numeros {
   public static boolean esPrimo(int x) {
     boolean esPrimo = true; 
     for (int i = 2; i < x; i++) {
-      if ((x % i) == 0) {
+      if ((x % i) == 0){
         esPrimo = false;
       }
     }   
@@ -252,8 +252,198 @@ public class Numeros {
     
     return  pegaPorDelante(y , x);
   }
+  
+  
+  /**
+   * Pasa de binario a decimal
+   * @param x (el número en binario)
+   * @return El número en decimal
+   */
+  public static int binarioADecimal (int x) {
     
+    int binario = x;
+    int digito = 0;
+    int decimal = 0;
+    int e = 0;
     
+    while (binario > 0) {
+      
+      digito = binario % 10;
+      digito = digito * ejercicios1al14.Numeros.potencia(2,e);
+      decimal += digito;
+      binario /= 10;
+      e++;
+    }
+    
+    return decimal;
+  }
+  
+  
+  
+  /**
+   * Pasa de decimal a binario
+   * @param x (el número en decimal)
+   * @return El número en binario
+   */
+  public static int decimalABinario (int x) {
+    
+    int decimal = x;
+    int digito = 0;
+    int [] binario = new int [100000000]; // Máximo tamaño del array
+    int i = 0;
+    int l = 0;
+    int numBin = 0;
+    
+    while (decimal >= 1) {
+      
+      digito = decimal % 2;
+      binario[i] = digito;
+      decimal/=2;
+      i++;
+      l++;
+      
+    }
+    
+    for (int j = l - 1; j >= 0;  j--) {
+      numBin = numBin * 10 + binario[j];
+    }
+    
+    return numBin;
+  }
+    
+  
+  
+  /**
+   * Pasa de octal a decimal
+   * @param x (el número en octal)
+   * @return El número en decimal
+   */
+  public static int octalADecimal (int x) {
+    
+    int octal = x;
+    int digito = 0;
+    int decimal = 0;
+    int e = 0;
+    
+    while (octal > 0) {
+      
+      digito = octal % 10;
+      digito = digito * ejercicios1al14.Numeros.potencia(8,e);
+      decimal += digito;
+      octal /= 10;
+      e++;
+    }
+    
+    return decimal;
+  }
+  
+  
+  /**
+   * Pasa de decimal a octal
+   * @param x (el número en decimal)
+   * @return El número en octal
+   */
+  public static int decimalAOctal (int x) {
+    
+    int decimal = x;
+    int digito = 0;
+    int [] octal = new int [100000000]; // Máximo tamaño del array
+    int i = 0;
+    int l = 0;
+    int numOct = 0;
+    
+    while (decimal >= 1) {
+      
+      digito = decimal % 8;
+      octal[i] = digito;
+      decimal/=8;
+      i++;
+      l++;
+      
+    }
+    
+    for (int j = l - 1; j >= 0;  j--) {
+      numOct = numOct * 10 + octal[j];
+    }
+    
+    return numOct;
+  }
+  
+  
+  
+  /**
+   * Pasa de decimal a hexadecimal
+   * @param x (el número en decimal)
+   * @return El número en hexadecimal
+   */
+  public static String decimalAHexadecimal (int x) {
+    
+    int decimal = x;
+    int digito = 0;
+    String [] hexadecimal = new String [100000000]; // Máximo tamaño del array
+    String [] valores = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
+    int i = 0;
+    int l = 0;
+    String numHex = "";
+    
+    while (decimal >= 1) {
+      
+      digito = decimal % 16;
+      hexadecimal[i] = valores[digito];
+      decimal/=16;
+      i++;
+      l++;
+      
+    }
+    
+    for (int j = l - 1; j >= 0;  j--) {
+      numHex += hexadecimal[j];
+    }
+    
+    return numHex;
+    
+  }
+  
+  
+  
+  
+  /**
+   * Pasa de hexdecimal a decimal
+   * @param x (el número en hexdecimal)
+   * @return El número en decimal
+   */
+  public static int hexadecimalADecimal (String num) {
+    
+    String [] valores = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
+    int decimal = 0;
+    int x = 0;
+    char digito = 'g';
+    int aux = num.length();
+    int e = 0;
+    
+    num = num.toUpperCase();
+    
+    while (x < aux) {
+      
+      digito = num.charAt(aux - 1);
+    
+      
+      for (int i = 0; i < valores.length; i++) {
+       
+        if (digito == valores[i].charAt(0)) {
+          
+          i = i * ejercicios1al14.Numeros.potencia(16,e);
+          decimal += i;
+          
+        }
+      }
+      aux--;
+      e++;
+      
+    }
+    return decimal;
+  }
+  
 }
 
 

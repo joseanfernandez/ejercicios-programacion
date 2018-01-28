@@ -20,8 +20,13 @@ public class prueba { // Clase principal
 
             System.out.println(ejercicios1al14.Numeros.juntaNumeros(5479, 2222) );
 
-
     
+       System.out.println(ejercicios1al14.Numeros.binarioADecimal(10011011));
+       System.out.println(ejercicios1al14.Numeros.decimalABinario(155));
+       System.out.println(ejercicios1al14.Numeros.octalADecimal(7014));
+       System.out.println(ejercicios1al14.Numeros.decimalAOctal(34578));
+       System.out.println(ejercicios1al14.Numeros.decimalAHexadecimal(495));
+       System.out.println(ejercicios1al14.Numeros.hexadecimalADecimal("4f"));
   } 
 }
     
