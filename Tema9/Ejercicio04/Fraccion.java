@@ -18,8 +18,10 @@
   }
   
   public String toString() {
-    String resultado = String(this.numerador) + "/" + String(this.denominador);
+    String cadena = "";
+    cadena = String.valueOf(this.numerador) + "/" + String.valueOf(this.denominador);
     
+    return cadena;
   }
     
     
