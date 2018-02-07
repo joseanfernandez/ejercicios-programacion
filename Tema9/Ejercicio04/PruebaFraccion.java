@@ -15,6 +15,14 @@ public class PruebaFraccion {
     
     Fraccion dividida = uno.divide(dos);
     System.out.println(dividida);
+    
+    System.out.println(uno.invierte());
+    
+    Fraccion invertida = uno.invierte();
+    System.out.println(invertida);
+    
+    System.out.println(uno.multiplica(10));
+    System.out.println(uno.divide(10));
 
     
     
