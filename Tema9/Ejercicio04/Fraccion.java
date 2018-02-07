@@ -25,8 +25,18 @@
     }
     
     
+    // getter
+    
+    int getNumerador() { 
+      return this.numerador;
+    } 
+    
+    int getDenominador() { 
+      return this.denominador;
+    } 
       
       
+    
     Fraccion invierte() {
       
       int n;
@@ -42,6 +52,8 @@
       
     }
     
+    
+    
     Fraccion multiplica (Fraccion f) {
       
       int n;
@@ -55,6 +67,7 @@
       return resultado;
       
     }
+    
     
     Fraccion divide (Fraccion f) {
       
@@ -103,7 +116,34 @@
     }
     
     
-    
+    Fraccion simplifica () {
+      
+      int aux;
+      if (this.numerador <= this.denominador) {
+        aux = this.numerador;
+      } else {
+        aux = this.numerador;
+      }
+      
+      int n = this.numerador;
+      int d = this.denominador;
+      
+      for (int i = 2; i < aux;  i++) {
+        
+        
+        if ((this.numerador % i == 0) && (this.numerador % i == 0)) {
+          
+          n = this.numerador / i;
+          d = this.denominador / i;
+        }
+          
+      }
+      
+      Fraccion resultado = new Fraccion (n,d);
+      
+      return  resultado;
+      
+    }
     
     
   

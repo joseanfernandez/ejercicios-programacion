@@ -23,6 +23,11 @@ public class PruebaFraccion {
     
     System.out.println(uno.multiplica(10));
     System.out.println(uno.divide(10));
+    
+    System.out.println(multiplicada.simplifica());
+    
+    System.out.println(dos.getNumerador());
+    System.out.println(dos.getDenominador());
 
     
     
